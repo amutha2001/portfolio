@@ -1,15 +1,22 @@
 .container{
-margin:auto;
-width:85%;
+	width:80%;
+	margin:auto;
 }
 /* Home */
-@media(min-width:390px){
 .navbar{
 	font-size:1.5rem;
 	padding:2rem;
+	background-color:black;
 }
 .nav-link{
 	color:white !important;
+}
+.navbar-toggler-icon{
+	background-color:white;
+}
+.navbar-light .navbar-toggler{
+color: rgb(255 255 255);
+    border-color: rgb(255 255 255)!important;
 }
 .active{
 	color:#ffb400!important;
@@ -27,6 +34,9 @@ width:85%;
     line-height: 32px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+}
+#main{
+	background-color:black;
 }
 .main-text h1 {
 	font-weight:bold;
@@ -53,6 +63,7 @@ width:85%;
     color: #fff;
     padding: 0 20px;
 	margin-top:2rem;
+	margin-bottom:2rem;
 }
 .text-left a{
 	font-size:1rem;
@@ -60,6 +71,7 @@ width:85%;
 .text-left {
    display:flex;
    justify-content:space-between;
+   
 }
 .homeimg{
 	width:98%;
@@ -78,7 +90,7 @@ width:85%;
    background: #222;
 }
 .navbar-toggler{
-	margin-left:8rem;
+	margin:auto;
 }
 .navbar a iconify-icon{
 	font-size:2.5rem;
@@ -96,12 +108,16 @@ width:85%;
 	color:orange;
 }
 .icon:hover{
-	color:black;
+	color:white;
 }
 .ico:hover{
 	color:black;
 }
-@media(min-width:769px){
+@media(min-width:768px){
+	.container{
+	width:80%;
+	margin:auto;
+}
 .navbar a iconify-icon{
 	font-size:3rem;
 	color:white;
@@ -112,6 +128,10 @@ width:85%;
 }
 }
 @media(min-width:1024px){
+	.container{
+	width:80%;
+	margin:auto;
+}
 .navbar a iconify-icon{
 	font-size:3rem;
 	color:white;
@@ -119,14 +139,14 @@ width:85%;
 }
 }
 /* about */
-@media(min-width:390px){
 	.section2{
 		background-color:#0C0B09;
 		padding-top:2rem;
 		padding-bottom:4rem;
+		
 	}
 	.pic{
-		width:40%;
+		    width: 80%;
 	}
 	.pic img{
 		width:100%;
@@ -141,6 +161,9 @@ width:85%;
 		font-size:2.5rem;
 		color:white;
 		text-align:center;
+		justify-content:space-between;
+	    padding-top:4.5rem;
+
 	}
 	.about h1 span{
 	font-size:2.5rem;
@@ -154,8 +177,9 @@ width:85%;
 		height:1vh;
 		margin:auto;
 }
-.about{
-	justify-content:space-between;
+.person{
+	padding-top:2rem;
+	margin:auto;
 }
 .bb{
 	font-size:1.6rem;
@@ -169,7 +193,6 @@ width:85%;
 }
 .pic{
 	border:5px solid orange;
-	text-align:center;
 }
 .image{
 	width:100%;
@@ -183,16 +206,43 @@ width:85%;
 .me{
 	margin-top:1.2rem;
 }
+@media(max-width:390px){
+	.ico{
+	text-align:center;
 }
-@media(min-width:769px){
+.pic{
+	border:5px solid orange;
+	margin:auto;
+}
+.bb{
+	font-size:1.6rem;
+	color:#C9C9C9;
+	text-align:center;
+}
+}
+@media(min-width:768px){
+	.container{
+	width:80%;
+	margin:auto;
+}
 	.about h1::after{
 		width:10%;
 }
-.pic{
-		width:50%;
+.bb{
+	padding-left:2.5rem;
+}
+.ico{
+	padding-left:2.5rem;
+}
+.text-left{
+	padding-left:2.5rem;
 }
 }
 @media(min-width:1024px){
+	.container{
+	width:80%;
+	margin:auto;
+}
 	.about h1::after{
 		width:8%;
 		height:0.6vh;
@@ -201,6 +251,9 @@ width:85%;
  .pic{
 	 width:70%;
  }
+ .text-left iconify-icon{
+	font-size:1.5rem;
+}
 }
 /* education */
 .edu{
@@ -246,7 +299,6 @@ width:85%;
 	margin-left:4rem;
 }
 /* project */
-@media(min-width:390px){
 	.section5{
 	background-color:#1A1814;
 	padding-top:3rem;
@@ -271,21 +323,22 @@ width:85%;
 }
 .mamb{
 	color:white;
-	margin-left:2rem;
-	font-size:1.5rem;
+	font-size:1rem;
 	margin-top:6rem;
 }
 .mamb p{
-	padding:10px;
+	padding:3px;
 }
 .mamb b{
 	font-weight:bold;
 }
 .mamb iconify-icon{
 		font-size:5rem;
-}
+	    margin-top:1rem;
+		}
 .mamb img{
-	width:20%;
+	width:15%;
+	margin-top:1rem;
 }
 	.opa{
 		position:absolute;
@@ -299,14 +352,41 @@ width:85%;
 		background-color: #0000009e;
 	}
 	.opa a{
-		border:1px solid #EC449B;
+		border:1px solid orange;
 		padding:10px;
-		background-color:#EC449B;
+		background-color:orange;
 		text-align:center;
-		font-size:2rem;
+		font-size:1.3rem;
 		color:white;
 		text-decoration:none;
+		border-left:10px;
+		 border-radius: 5px 20px 5px;
 	}
+@media(min-width:768px){
+	.mamb{
+	color:white;
+	font-size:1.2rem;
+	margin-top:4rem;
+}
+.mamb img{
+	margin-top:1rem;
+}
+.mamb iconify-icon{
+	margin-top:1rem;
+}
+}
+@media(min-width:1024px){
+	.mamb{
+	color:white;
+	font-size:1.5rem;
+	margin-top:5rem;
+}
+.mamb img{
+	margin-top:1rem;
+}
+.mamb iconify-icon{
+	margin-top:1rem;
+}
 }
 /* resume */
 .section4{
@@ -335,6 +415,12 @@ width:85%;
   height: 350px;
   border-radius:5px;
   box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+}
+@media(min-width:320px){
+	.card{
+		width: 240px;
+  height: 350px;
+	}
 }
 .card .percent {
   position: relative;
@@ -430,11 +516,12 @@ span{
 	font-size:1.5rem;
 }
 .address a{
-	border:1px solid #ffb400;
 	padding:5px;
 	font-size:1.5rem;
-	background-color:#ffb400;
 	color:white;
+}
+.address a:hover{
+	color:orange;
 }
 .contLink{
 	text-decoration:none;
